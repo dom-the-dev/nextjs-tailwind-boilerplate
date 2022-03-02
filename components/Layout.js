@@ -11,18 +11,19 @@ const Layout = ({children}) => {
                 <link rel="icon" href="/favicon.ico"/>
             </Head>
 
-            <main>
+            <main className="container mx-auto">
                 {children}
             </main>
 
-            <footer>
+            <footer className="flex justify-center items-center">
                 <a
+                    className="flex flex-col"
                     href="https://domthedev.com"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
                     Powered by{' '}
-                    <span><Image src="/domthedev.png" alt="Dom the dev Logo" width={72} height={16}/></span>
+                    <Image src="/domthedev.png" alt="Dom the dev Logo" width={72} height={72}/>
                 </a>
             </footer>
         </div>
